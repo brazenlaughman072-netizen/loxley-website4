@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8f6f2, #e8f4f1);
+    color: #2E3A3F;
+    overflow-x: hidden;
+}
+
+/* ===== HEADER ===== */
+
+.topbar {
+    width: 100%;
+    background: #7BBFA6;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.topbar nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.topbar nav a:hover {
+    opacity: 0.8;
+}
+
+/* ===== MAIN HUB LAYOUT ===== */
+
+.hub-container {
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid-layout {
+    position: relative;
+    width: 900px;
+    height: 600px;
+}
+
+/* ===== CARDS ===== */
+
+.card {
+    position: absolute;
+    width: 380px;
+    height: 220px;
+    border-radius: 28px;
+    padding: 30px;
+    text-decoration: none;
+    color: #2E3A3F;
+    background: white;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.12);
+}
+
+/* Pastel Variations */
+.card1 { top: 0; left: 0; background: #CDE8F6; }
+.card2 { top: 0; right: 0; background: #D8C6F2; }
+.card3 { bottom: 0; left: 0; background: #BFE3D6; }
+.card4 { bottom: 0; right: 0; background: #F4D9C6; }
+
+/* ===== CENTER CIRCLE ===== */
+
+.center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 260px;
+    background: #7BBFA6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+    z-index: 10;
+}
